@@ -1,7 +1,7 @@
 use std::env::{var,args};
 
-use vm::Vm;
-use vm::{BUILTINS,init};
+use vm_rs::Vm;
+use vm_rs::{BUILTINS,init};
 
 fn main() {
 	let path;
