@@ -18,9 +18,8 @@ pub fn init() -> HashMap<Key,fn(&mut Vm)> {
 }
 
 fn print(vm: &mut Vm) {
-    let num = vm.top();
-    for _ in 0..num {
-        print!("{}",vm.top() as char);
+    while let Some(top) = vm.stack().pop() {
+        print!("{}",top as char);
     }
     std::io::stdout().flush().unwrap();
 }
