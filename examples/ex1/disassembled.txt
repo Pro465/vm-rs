@@ -1,1 +1,4 @@
-push 14 Hello, 32 World! 10 rev call 1 5 0 0 0 print 14 0 0 0
+push 14 Hello, 32 World! 10 
+rev 
+call 1 5 0 0 0 
+print 14 0 0 0
