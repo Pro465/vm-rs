@@ -10,6 +10,9 @@ pub use exec::exec;
 mod builtins;
 pub use builtins::{BUILTINS,init};
 
+
+pub mod bits;
+
 pub type Key = Vec<u8>;
 
 pub type Frame = std::collections::HashMap<Key,Vec<u8>>;
