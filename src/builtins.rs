@@ -54,9 +54,6 @@ pub fn init() -> HashMap<Key,fn(&mut Vm)> {
     insert_op!(
         res,
 
-        u8 => (add, sub, mul, div, modulo, 
-               bit_and, bit_or, bit_xor, 
-               le, ge, lt, gt, eq, print),
         u16 => (add, sub, mul, div, modulo, 
                bit_and, bit_or, bit_xor, 
                le, ge, lt, gt, eq, print),
